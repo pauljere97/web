@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<nav>
+		<ul id="ul">
+			<li><a href="">Home</a></li>
+			<li><a href="">Education</a></li>
+			<li><a href="">Skills</a></li>
+			<li><a href="">Projects</a></li>
+			<li><a href="">Contact</a></li>
+			<li><a href="">About</a></li>
+		</ul>
+		<div class="menu-btn">
+			<img onclick="show()" src="images/menu.png" width="40px">
+		</div>
+	</nav>
+
+	<section class="container">
+		<div class="upper">
+			<p><span class = "textLead" >Hi, I am Paul</span><br>(Software Engineer)</p>
+		</div>
+		<div class="lower">
+			<button class="btn">FIND OUT MORE</button>
+		</div>
+	</section>
+
+ <script type="text/javascript">
+ 	function show(){
+		var show = document.getElementById('ul')
+		show.classList.toggle("show")
+	}
+ </script>
+</body>
+</html>
