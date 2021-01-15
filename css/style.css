@@ -1,0 +1,147 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	font-family: 'segoe UI', Tahoma, geneva, Verdana, sans-serif;
+}
+body, html{
+	background: url(../images/bg1.jpg) no-repeat center center fixed;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+nav{
+	background: black;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	cursor: pointer;
+
+	-webkit-box-shadow:rgba(0, 0, 0, 0.3) 0px 5px 5px, inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+	-moz-box-shadow:rgba(0, 0, 0, 0.3) 0px 5px 5px, inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+	-o-box-shadow:rgba(0, 0, 0, 0.3) 0px 5px 5px, inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+	box-shadow:rgba(0, 0, 0, 0.3) 0px 5px 5px, inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+}
+nav ul{
+	color: white;
+	display: flex;
+	justify-content: flex-start;
+
+}
+nav ul li{
+	list-style: none;
+	padding: 10px;
+	border-right: 1px solid #777;
+
+}
+nav ul li:last-child{
+	border-right: none;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	margin: 10px 10px;
+
+}
+nav ul li:hover{
+	background: #DD0000;
+	cursor: pointer;
+}
+.menu-btn{
+	padding: 5px;
+	display: none;
+}
+.menu-btn:hover{
+	cursor: pointer;
+	padding: 6px;
+}
+
+
+/******************* section *************************/
+.upper{
+	height: 80vh;
+	display: flex;
+	justify-content: flex-end;
+}
+.textLead{
+	font-size: 40px;
+	font-weight: bold;
+}
+.lower{
+	display: flex;
+	justify-content: center;
+}
+
+
+p{
+	float: right;
+	color: #f5f6f7;
+	font-weight: 500;
+	font-size: 25px;
+	margin-top: 80px;
+	text-shadow: 1px 1px 2px black;
+	margin-right: 70px;
+}
+.btn{
+	border-radius: 40px;
+	padding: 15px;
+	border: 2px solid #FFE5FF;
+}
+button{
+	float: right;
+	color: #FFE5FF;
+	background: #D02222;
+
+	-webkit-box-shadow:rgba(0, 0, 0, 0.3) 0px 5px 5px, inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+	-moz-box-shadow:rgba(0, 0, 0, 0.3) 0px 5px 5px, inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+	-o-box-shadow:rgba(0, 0, 0, 0.3) 0px 5px 5px, inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+	box-shadow:rgba(0, 0, 0, 0.3) 0px 5px 5px, inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+}
+button:hover{
+	background: #AE0000;
+}
+
+@media (max-width: 638px){
+	nav{
+		background: rgba(0,0,0, 0.8);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		
+	}
+	nav ul{
+		display: none;
+		padding: 0;
+
+	}
+	nav ul li{
+		list-style: none;
+		padding: 10px;
+		border-bottom: 1px solid #777;
+		border-right:none;
+		width: 120px;
+		opacity: 0.8;
+	}
+	nav ul li:last-child{
+		border-bottom: none;
+	}
+	p{
+		font-weight: 500;
+		font-size: 20px;
+		margin-right: 15px;
+	}
+	.textLead{
+		font-size: 30px;
+		font-weight: bold;
+	}
+	.menu-btn{
+		display: flex;
+		align-self: flex-start;
+	}
+	.show{
+		display: block;
+	}
+}
